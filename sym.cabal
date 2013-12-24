@@ -1,0 +1,23 @@
+name:                sym
+version:             0.1.0.0
+synopsis:            A toy symbol manipulation tool.
+description:         A toy symbol manipulation tool.
+homepage:            https://github.com/qiuhw/sym
+license:             BSD3
+license-file:        LICENSE
+author:              Hongwen Qiu
+maintainer:          qiuhongwen@gmail.com
+copyright:           2013 Hongwen Qiu
+category:            Compiler
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable sym
+  main-is:           sym.hs
+  other-modules:     Sym.SyntaxTree
+                     Sym.Parser
+  hs-source-dirs:    src
+  build-depends:     base ==4.6.*,
+                     containers ==0.5.*,
+                     mtl ==2.1.*,
+                     parsec ==3.1.*
